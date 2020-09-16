@@ -1,0 +1,53 @@
+{
+  "name": "todo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-swipeable": "^5.5.1",
+    "react-transition-group": "^4.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "prestart": "cross-env NODE_ENV=development postcss ./tailwind.src.css -o ./src/tailwind.css",
+    "start": "react-scripts start",
+    "watch": "nodemon -e src.css -x npm run prestart",
+    "prebuild": "cross-env NODE_ENV=production postcss ./tailwind.src.css -o ./src/tailwind.css",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "nodemon": "^2.0.4",
+    "postcss-cli": "^7.1.1",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "redux-devtools-extension": "^2.13.8",
+    "tailwindcss": "^1.7.1"
+  }
+}

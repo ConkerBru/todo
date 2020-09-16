@@ -1,0 +1,16 @@
+@tailwind base;
+
+html,
+body,
+#root {
+	@apply w-full;
+	@apply h-full;
+}
+
+main div {
+	@apply w-full;
+	@apply h-full;
+}
+
+@tailwind components;
+@tailwind utilities;

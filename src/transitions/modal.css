@@ -1,0 +1,21 @@
+.modal-appear {
+    opacity: 0;
+	transform: translateY(20%);
+}
+
+.modal-appear-active {
+    opacity: 1;
+	transform: translateY(0%);
+	transition: transform 300ms, opacity 300ms;
+}
+
+.modal-exit {
+	opacity: 1;
+	transform: translateY(0%);
+}
+
+.modal-exit-active {
+    opacity: 0;
+	transform: translateY(-30%);
+	transition: transform 300ms, opacity 300ms;
+}
